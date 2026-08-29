@@ -6,7 +6,7 @@ st.title("Simple Calculator")
 
 a = st.number_input("First number", value=0.0)
 b = st.number_input("Second number", value=0.0)
-op = st.selectbox("Operation", ["+", "-", "*", "/"])
+op = st.selectbox("Operation", ["+", "-", "*", "/", "^"])
 
 if st.button("Calculate"):
     if op == "+":
@@ -15,6 +15,8 @@ if st.button("Calculate"):
         result = a - b
     elif op == "*":
         result = a * b
+    elif op == "^":
+        result = a ** b
     elif b == 0:
         result = None
     else:
