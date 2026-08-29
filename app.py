@@ -26,5 +26,3 @@ if st.button("Calculate"):
         st.error("Cannot divide by zero.")
     else:
         st.success(f"{a} {op} {b} = {result}")
-def broken(
-        
